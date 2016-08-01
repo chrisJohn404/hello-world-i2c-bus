@@ -1,0 +1,19 @@
+{
+  "name": "hello-world-i2c-bus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisjohn404/hello-world-i2c-bus.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisjohn404/hello-world-i2c-bus/issues"
+  },
+  "homepage": "https://github.com/chrisjohn404/hello-world-i2c-bus#readme"
+}
