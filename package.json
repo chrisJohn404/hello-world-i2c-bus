@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/chrisjohn404/hello-world-i2c-bus/issues"
   },
-  "homepage": "https://github.com/chrisjohn404/hello-world-i2c-bus#readme"
+  "homepage": "https://github.com/chrisjohn404/hello-world-i2c-bus#readme",
+  "dependencies": {
+    "async": "^2.0.1",
+    "i2c-bus": "^1.1.1"
+  }
 }
