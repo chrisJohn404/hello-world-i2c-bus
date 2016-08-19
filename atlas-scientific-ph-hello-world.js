@@ -35,7 +35,11 @@ function startApp() {
     	var devInfoCmd = commands.deviceInformation;
       var devInfoVal = devInfoCmd.charCodeAt(0);
       i2c1.readI2cBlock(atl_sci_ph_addr, devInfoVal,10, readBuffer, function(data) {
-      	console.log('I am here!!', readBuffer.toString());
+      	console.log('I am here!!', readBuffer.toString('ascii'));
+      	// var bufLen = readBuffer.length;
+      	// for(var i = 0; i < bufLen; i++) {
+      	// 	var charVal = readBuffer.read
+      	// }
       	cb();
       })
     },
