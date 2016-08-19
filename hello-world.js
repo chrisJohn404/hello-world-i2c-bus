@@ -4,7 +4,8 @@ var async = require('async'),
   i2c = require('i2c-bus'),
   i2c1;
  
-var DS1621_ADDR = 0x48,
+// var DS1621_ADDR = 0x48,
+var DS1621_ADDR = 0x63,
   CMD_ACCESS_CONFIG = 0xac,
   CMD_READ_TEMP = 0xaa,
   CMD_START_CONVERT = 0xee;
