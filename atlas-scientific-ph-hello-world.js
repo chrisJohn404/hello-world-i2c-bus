@@ -16,7 +16,7 @@ var commands = {
 	'deviceInformation': 'I',
 }
 // Get data!
-(function () {
+function startApp() {
   async.series([
     function (cb) {
       i2c1 = i2c.open(1, cb);
@@ -45,4 +45,6 @@ var commands = {
   ], function (err) {
     if (err) throw err;
   });
-}());
+}
+
+startApp();
