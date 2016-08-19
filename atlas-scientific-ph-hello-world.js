@@ -29,8 +29,8 @@ function startApp() {
       i2c1 = i2c.open(1, cb);
     },
     function (cb) {
-      devInfoCmd = commands.deviceInformation.cmd;
-      devInfoVal = devInfoCmd.charCodeAt(0);
+      var devInfoCmd = commands.deviceInformation.cmd;
+      var devInfoVal = devInfoCmd.charCodeAt(0);
 
       curDevInfoCmd = devInfoCmd;
 			curDevInfoVal = devInfoVal;
@@ -46,7 +46,7 @@ function startApp() {
     },
     function (cb) {
     	var readBuffer = new Buffer(32);
-    	var devInfoCmd = commands.deviceInformation;
+    	var devInfoCmd = commands.deviceInformation.cmd;
       var devInfoVal = devInfoCmd.charCodeAt(0);
       // i2c1.readI2cBlock(atl_sci_ph_addr, devInfoVal,10, readBuffer, function(data) {
       	i2c1.i2cRead(atl_sci_ph_addr, 32, readBuffer, function(data) {
